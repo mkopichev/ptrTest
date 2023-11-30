@@ -7,7 +7,7 @@ void valuePass(int i) {
 
 void ptrPass(int *i) {
     *i += 1;
-    printf("Var i inside refPass() has address %p \n", i);
+    printf("Var i inside ptrPass() has address %p \n", i);
 }
 
 int main(void) {
