@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stddef.h>
 
 void valuePass(int i) {
     i += 1;
@@ -14,7 +15,6 @@ int main(void) {
 
     int i = 10;
     int *iPtr = &i;
-
     printf("Var i has initial value %d and address %p \n\n", i, iPtr);
     valuePass(i);
     printf("Var i after valuePass() has value %d and address %p \n\n", i, iPtr);
